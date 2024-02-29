@@ -21,9 +21,7 @@ function Alert({ alertTitle, textColor, borderColor, bgColor }) {
                className={`flex items-center p-6 mb-4 border-t-4 ${alertStyle.textColor} ${alertStyle.borderColor} ${alertStyle.bgColor}`}
                role='alert'
             >
-               <div className='ms-3 text-md font-medium'>
-                  {alertTitle}
-               </div>
+               <div className='ms-3 text-md font-medium'>{alertTitle}</div>
                <button
                   type='button'
                   onClick={handleClose}
